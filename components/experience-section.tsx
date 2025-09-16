@@ -130,9 +130,16 @@ export default function ExperienceSection() {
                               <MapPin className="h-3 w-3" />
                               {exp.location}
                             </div>
-                            <Badge variant="outline" className="border-primary/30 text-white text-xs">
-                              {exp.type}
-                            </Badge>
+                        <Badge
+  variant="outline"
+  className={`text-xs ${
+    exp.type === "Full-time"
+      ? "bg-green-600/20 text-green-400 border-green-500/40"
+      : "bg-amber-600/20 text-amber-400 border-amber-500/40"
+  }`}
+>
+  {exp.type}
+</Badge>
                           </div>
                         </div>
                       </div>
