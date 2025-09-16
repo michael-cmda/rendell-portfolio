@@ -1,0 +1,293 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color palette for cybersecurity theme */
+  --background: #1b262c; /* Primary Dark Navy */
+  --foreground: #ffffff; /* White text */
+  --card: #0f4c75; /* Secondary Deep Blue */
+  --card-foreground: #ffffff; /* White text on cards */
+  --popover: #3282b8; /* Sky Blue */
+  --popover-foreground: #ffffff; /* White text on popovers */
+  --primary: #3282b8; /* Sky Blue for CTAs */
+  --primary-foreground: #ffffff; /* White text on primary */
+  --secondary: #0f4c75; /* Deep Blue */
+  --secondary-foreground: #ffffff; /* White text on secondary */
+  --muted: #bbe1fa; /* Light Blue */
+  --muted-foreground: #ffffff; /* White text for better readability */
+  --accent: #bbe1fa; /* Light Blue highlight */
+  --accent-foreground: #1b262c; /* Dark text on accent */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #0f4c75; /* Deep Blue borders */
+  --input: #ffffff; /* White input backgrounds */
+  --ring: #3282b8; /* Sky Blue focus rings */
+  --chart-1: #bbe1fa;
+  --chart-2: #3282b8;
+  --chart-3: #0f4c75;
+  --chart-4: #1b262c;
+  --chart-5: #ffffff;
+  --radius: 0.5rem;
+  --sidebar: #1b262c;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #0f4c75;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #3282b8;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #0f4c75;
+  --sidebar-ring: #3282b8;
+}
+
+.dark {
+  /* Dark mode uses same cybersecurity palette */
+  --background: #1b262c;
+  --foreground: #ffffff;
+  --card: #0f4c75;
+  --card-foreground: #ffffff;
+  --popover: #3282b8;
+  --popover-foreground: #ffffff;
+  --primary: #3282b8;
+  --primary-foreground: #ffffff;
+  --secondary: #0f4c75;
+  --secondary-foreground: #ffffff;
+  --muted: #bbe1fa;
+  --muted-foreground: #ffffff; /* White text for better readability */
+  --accent: #bbe1fa;
+  --accent-foreground: #1b262c;
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: #0f4c75;
+  --input: #ffffff;
+  --ring: #3282b8;
+  --chart-1: #bbe1fa;
+  --chart-2: #3282b8;
+  --chart-3: #0f4c75;
+  --chart-4: #1b262c;
+  --chart-5: #ffffff;
+  --radius: 0.5rem;
+  --sidebar: #1b262c;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #0f4c75;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #3282b8;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #0f4c75;
+  --sidebar-ring: #3282b8;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom animations for cybersecurity theme */
+@keyframes particle-float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary), 0 0 15px var(--primary);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+  }
+}
+
+/* Added fade-in animations to replace JavaScript scroll animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.particle-animation {
+  animation: particle-float 6s ease-in-out infinite;
+}
+
+.glow-effect {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Added CSS animation classes to replace JavaScript scroll animations */
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-fade-in-delay-200 {
+  animation: fade-in 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-300 {
+  animation: fade-in 0.8s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-400 {
+  animation: fade-in 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-500 {
+  animation: fade-in 0.8s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-600 {
+  animation: fade-in 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-700 {
+  animation: fade-in 0.8s ease-out 0.7s forwards;
+  opacity: 0;
+}
+
+/* Added smooth transitions for better interactivity */
+/* Smooth transitions for all interactive elements */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-colors-smooth {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.transition-transform-smooth {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-shadow-smooth {
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effects for cards and interactive elements */
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(50, 130, 184, 0.3);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Button transitions */
+.btn-transition {
+  transition: all 0.2s ease;
+}
+
+.btn-transition:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(50, 130, 184, 0.3);
+}
+
+/* Link transitions */
+.link-transition {
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+/* Icon transitions */
+.icon-transition {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-transition:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Skill bar animations */
+.skill-bar {
+  transition: width 1s ease-in-out;
+}
+
+/* Project card hover effects */
+.project-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}

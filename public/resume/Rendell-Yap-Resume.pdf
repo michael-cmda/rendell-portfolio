@@ -1,0 +1,211 @@
+Portfolio Website Prompt
+
+Modern React Portfolio Website for Rendell Yap
+
+🔹 Overview & Profile
+
+Create a professional, modern portfolio website for Rendell C. Yap, an IT System Administrator & Cybersecurity Specialist with over 10 years of experience. He holds certifications in CEH, CompTIA CySA+, Microsoft Cybersecurity Analyst, and NPC-DPO, and specializes in IT infrastructure, cybersecurity, data privacy compliance, and network administration.
+
+The design should use a cybersecurity-inspired color palette:
+
+Primary Dark: #1B262C
+
+Secondary Dark: #0F4C75
+
+Accent: #3282B8
+
+Highlight: #BBE1FA
+
+This palette should convey professionalism, reliability, and trust with a sleek, modern look.
+
+Profile Picture: Display in the Hero section, blending naturally into the background with:
+
+A circular mask and slight transparency (opacity ~95%)
+
+A soft feathered gradient fade into #1B262C
+
+A subtle glow outline in #3282B8 or #BBE1FA for depth
+
+Optional particle overlay behind and partially overlapping the photo for a futuristic cybersecurity effect
+
+🔹 Website Structure
+Home (Hero)
+
+Headline:
+"Hi, I’m Rendell Yap – IT System Administrator & Cybersecurity Specialist"
+
+One-liner Bio:
+"I secure, optimize, and manage IT systems to strengthen business continuity."
+
+CTAs:
+
+View My Work
+
+Download Resume
+
+Contact Me
+
+Design:
+
+Background: #1B262C with subtle particle grid animation (#3282B8)
+
+Text: Headline in #BBE1FA, subtext in white
+
+Buttons: #3282B8 with hover glow #BBE1FA
+
+About
+
+Bio:
+Dependable IT professional with a decade of experience enhancing IT operations, optimizing systems, and strengthening cybersecurity posture. Skilled in system administration, threat detection, vulnerability assessment, network security, and compliance with RA 10173 (Data Privacy Act).
+
+Education:
+
+BS Information Technology – AMA Computer College, Davao (2013)
+
+Design:
+
+Background: #0F4C75
+
+Titles in #BBE1FA
+
+Dividers in #3282B8
+
+Experience (Timeline or Cards)
+
+IT Administrator & Data Protection Officer – Next BPO Solutions (2018 – Present)
+
+Oversaw IT infrastructure, servers, and networks
+
+Implemented security protocols and RA 10173 compliance
+
+Conducted audits, backups, and recovery
+
+Trained staff on cybersecurity and privacy best practices
+
+Tech Virtual Assistant – Thrive Marketing (2017 – 2018)
+
+IT & Network Admin – RJK Luminous Builders (2015 – 2017)
+
+Computer Technician – REDCOM Computer Service (2014 – 2015)
+
+Graphic Designer & Copywriter – WISR Outsourcing (2014)
+
+IT Admin Officer – EUROPHILKOR Mining Corp. (2013 – 2014)
+
+Design:
+
+Timeline dots in #3282B8
+
+Hover highlight glow in #BBE1FA
+
+Skills (Grid/Badges)
+
+Networking & Systems: LAN/WAN, DNS, Active Directory, DHCP, Windows & Linux
+
+Cybersecurity: CEH, CySA+, SIEM, Threat Detection, Incident Response
+
+Compliance: Data Privacy Act RA 10173, Policy Development, Risk Assessment
+
+Hardware & Support: PC building, optimization, CCTV installation
+
+Tools: Adobe Photoshop, CorelDraw, MS Office, Google Suite
+
+Soft Skills: Documentation, training, mentoring
+
+Design:
+
+Badges in #3282B8, hover fill #BBE1FA
+
+Awards & Certifications
+
+Certified Ethical Hacker (CEH v13)
+
+CompTIA CySA+
+
+Microsoft Cybersecurity Analyst
+
+NPC-DPO ACE Level 1
+
+Cisco Certified Network Associate (eligible)
+
+NC II Computer Hardware Servicing
+
+Best IT Capstone Project Award – AMACC
+
+Best IT Research Award – Davao Teknoliksik
+
+Projects / Portfolio (Cards/Grid)
+
+Cybersecurity Projects: Vulnerability assessments, penetration testing reports
+
+System Administration: Server setups, system migrations, data backups
+
+Compliance Frameworks: Privacy policies & IT governance documentation
+
+Tech Support Solutions: Ticketing systems, IT training materials
+
+Creative Work: Graphics, newsletters, blog management
+
+Design:
+
+Cards: #1B262C with #3282B8 borders
+
+Hover: glow in #BBE1FA
+
+Services
+
+IT System Administration
+
+Cybersecurity & Threat Detection
+
+Data Privacy Compliance (RA 10173)
+
+Network & Server Management
+
+IT Support & Training
+
+Graphic Design & Copywriting
+
+Contact
+
+📧 rendellcolinayap@gmail.com
+
+📞 +63 955 961 0555
+📍 Davao City, Philippines
+🔗 LinkedIn: /rendell-yap-3a947ba1
+
+Design:
+
+Background gradient: #0F4C75 → #1B262C
+
+Icons: #3282B8, hover glow #BBE1FA
+
+🔹 Design Guidelines
+
+Backgrounds: Dark navy (#1B262C) with particle/stone-like subtle textures
+
+Text: White with headings in #BBE1FA
+
+Accents: #3282B8 for links, buttons, borders
+
+Hover Effects: Glowing #BBE1FA transitions
+
+Animations:
+
+Particle motion in hero
+
+Parallax scroll
+
+Section fade/slide reveals
+
+Navigation:
+
+Sticky header (#1B262C)
+
+Active link: #3282B8
+
+Hover underline glow: #BBE1FA
+
+Profile Image: Blended with background using soft transparency, glow, and gradient fade
+
+⚡ End Goal: A cybersecurity-inspired portfolio site that feels sleek, modern, and trustworthy—blending deep navy stability with bright, secure highlights, and a realistically integrated profile photo for a professional yet human touch.
